@@ -14,7 +14,7 @@ M5stack app of wakeup alarm, time is automatically set from events in google cal
 
 ### 1. Set your WiFi SSID / password
 ```C
-const char* ssid = "SSID_OF_YOUR_WIFI"; // ******** SET YOUR SSD ********
+const char* ssid = "SSID_OF_YOUR_WIFI";         // ******** SET YOUR SSID ********
 const char* password = "PASSWORD_OF_YOUR_WIFI"; // ******** SET YOUR WIFI PASSWORD ********
 ```
 
