@@ -14,24 +14,32 @@ M5stack app of wakeup alarm, time is automatically set from events in google cal
 
 ### 1. Set your WiFi SSID / password
 ```C
-const char* ssid = "SSID_OF_YOUR_WIFI";         // ******** SET YOUR SSID ********
-const char* password = "PASSWORD_OF_YOUR_WIFI"; // ******** SET YOUR WIFI PASSWORD ********
+const char* ssid = "YOUR_WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
 ```
 
 ### 2. Set your calendar
 
 ```C
-#define CALNUM 3 // number of accessed google calendars
+#define CALNUM 3 // number of google calendar
 
-String calendar[] = { // iCalendar address of google calendar
-  "https://calendar.google.com/calendar/ical/xxxxxxxxxxxxxxxxxxxxxxxxxxgroup.calendar.google.com/public/basic.ics", // alarm time
-  "https://calendar.google.com/calendar/ical/yyyyyyyyyyyyyyyyyyyyyyyyyygroup.calendar.google.com/public/basic.ics", // event calendar 1
-  "https://calendar.google.com/calendar/ical/zzzzzzzzzzzzzzzzzzzzzzzzzzgroup.calendar.google.com/public/basic.ics"  // event calendar 2
+struct gcal {
+  String name; // short name of each calendar shown on display
+  int margin;  // time between alarm and event, in minutes
+  String url;  // iCalendar address of google calendar
+} cal[CALNUM] = { // Google calendar settings
+    { "Alarm   ", 0, 
+      "https://calendar.google.com/calendar/ical/XXXXXXXXXXXXXXXXXXXXXXXXXgroup.calendar.google.com/public/basic.ics"
+    },
+    { "Meeting ", 120,
+      "https://calendar.google.com/calendar/ical/YYYYYYYYYYYYYYYYYYYYYYYYYgroup.calendar.google.com/public/basic.ics"
+    },
+    { "Office  ", 120,
+      "https://calendar.google.com/calendar/ical/ZZZZZZZZZZZZZZZZZZZZZZZZZgroup.calendar.google.com/public/basic.ics"
+    }
 };
 
-String calName[] = { // short name of each calendar shown on display
-  "Alarm   ", "Meeting ", "Office  "
-};
+#define ALARM_LENGTH 60 // time to ring the alarm
 ```
 - Set your iCal URL (either #1 or #2 can be used. I recommend #1 for stability)
   * If you use iCal URL #1, please make sure that the calendar is public. In this case, it is better to hide details to keep your privacy.
@@ -43,7 +51,7 @@ String calName[] = { // short name of each calendar shown on display
 ### 3. ntp and timezone setting
 
 ```C
-#define TIMEZONE 9 // 時間帯（Japan : +9） ******** SET YOUR TIMEZONE ********
+#define TIMEZONE 9 // time zone（Japan : +9）
 const char* ntpServer = "ntp.jst.mfeed.ad.jp";
 const long  gmtOffset_sec = 3600 * TIMEZONE; // time difference in seconds
 const int   daylightOffset_sec = 0;
