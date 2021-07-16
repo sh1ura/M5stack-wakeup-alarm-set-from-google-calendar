@@ -41,12 +41,13 @@ struct gcal {
 
 #define ALARM_LENGTH 60 // time to ring the alarm
 ```
+
+![desc2](https://user-images.githubusercontent.com/86639425/125977300-76b28b15-ead0-436c-83f3-ba58ab50cdd6.jpg)
+
 - Set your iCal URL (either #1 or #2 can be used. I recommend #1 for stability)
   * If you use iCal URL #1, please make sure that the calendar is public. In this case, it is better to hide details to keep your privacy.
 - Give short name to each calendar. It is shown on the display of M5stack
 - Change number of accessed calendars to CALNUM
-
-![desc2](https://user-images.githubusercontent.com/86639425/125977300-76b28b15-ead0-436c-83f3-ba58ab50cdd6.jpg)
 
 ### 3. ntp and timezone setting
 
