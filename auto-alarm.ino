@@ -3,8 +3,6 @@
 #include <HTTPClient.h>
 #include "time.h"
 
-
-
 // ***************** settings *******************
 // configuration of WiFi / WiFi の接続設定
 const char* ssid = "YOUR_WIFI_SSID";
