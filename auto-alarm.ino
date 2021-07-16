@@ -29,7 +29,7 @@ struct gcal {
 #define ALARM_LENGTH 60 // time to ring the alarm / 目覚ましを鳴らす秒数
 
 //ntp (time server) config / ntp （時刻サーバ）の設定
-#define TIMEZONE 9 // time zone / œ時間帯（Japan : +9）
+#define TIMEZONE 9 // time zone / 時間帯（Japan : +9）
 const char* ntpServer = "ntp.jst.mfeed.ad.jp";
 const long  gmtOffset_sec = 3600 * TIMEZONE; // time difference in seconds / 時差（秒）
 const int   daylightOffset_sec = 0;
