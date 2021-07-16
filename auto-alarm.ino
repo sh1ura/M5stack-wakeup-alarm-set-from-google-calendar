@@ -26,7 +26,7 @@ struct gcal {
     }
 };
 
-#define ALARM_LENGTH 60 // timeCALNUM to ring the alarm / 目覚ましを鳴らす秒数
+#define ALARM_LENGTH 60 // time to ring the alarm / 目覚ましを鳴らす秒数
 
 //ntp (time server) config / ntp （時刻サーバ）の設定
 #define TIMEZONE 9 // time zone / œ時間帯（Japan : +9）
