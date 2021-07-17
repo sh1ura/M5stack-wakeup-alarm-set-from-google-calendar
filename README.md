@@ -65,3 +65,8 @@ const int   daylightOffset_sec = 0;
 ```
 
 ### 4. Compile and install via Arduino IDE
+
+## Misc.
+
+- Use this program on your own risk. I am not responsible to any trouble on your schedule.
+- It acquires events every minute, and alarm time is changed if it finds earlier event. Even if early event is deleted, the alarm is not postponed. It is for the safety if WiFi disconnection or server trouble occur. If the M5stack is reset, the alarm is also reset.
