@@ -12,7 +12,7 @@ M5stack を用いた目覚まし時計です．その日の予定を取得して
   * 予定に関するカレンダーでは，朝食や移動に要する時間を分単位で設定してください
 - Google Calendar の iCal を用いて予定を取得するので，Amazon AWS や Google クラウドプラットフォームなどを使用する必要がありません
 
-<img src="https://user-images.githubusercontent.com/86639425/125974374-a5d1c232-e7c1-42a3-8b3e-16797ea01346.jpg" width="600">
+<img src="https://user-images.githubusercontent.com/86639425/126030181-32f42968-63cd-4532-8cf5-e8fa0d19f7a3.jpeg" width="600">
 
 ## 設定
 
@@ -46,7 +46,7 @@ struct gcal {
 #define ALARM_LENGTH 60 // アラームを鳴らす時間
 ```
 
-<img src="https://user-images.githubusercontent.com/86639425/125977300-76b28b15-ead0-436c-83f3-ba58ab50cdd6.jpg" width="600">
+<img src="https://user-images.githubusercontent.com/86639425/126030185-4327083a-90e8-40b8-a9ac-e1d714806395.jpeg" width="600">
 
 - iCal の URL を設定する．上の #1 と #2 のどちらでもよいが，安定性のためには #1 推奨．#2 は大きすぎて処理できないことあり
   * URL #1 を使うときは，そのカレンダーが公開されていなければなりません．この場合，予定の表示を，詳細を隠す設定にするのが良いです
