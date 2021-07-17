@@ -10,7 +10,7 @@ M5stack app of wakeup alarm, time is automatically set from events in google cal
   * for 'event' calendar, set necessary time for breakfast, move, etc.
 - You do not need to use Amazon AWS or google cloud platform. It directly access iCal of google calendar.
 
-![desc](https://user-images.githubusercontent.com/86639425/125974374-a5d1c232-e7c1-42a3-8b3e-16797ea01346.jpg)
+<img src="https://user-images.githubusercontent.com/86639425/125974374-a5d1c232-e7c1-42a3-8b3e-16797ea01346.jpg" width="500">
 
 ## Settings
 
