@@ -1,6 +1,6 @@
 # M5stack wakeup alarm, automatically set from events in google calendar
 
-<a href="https://github.com/sh1ura/M5stack-wakeup-alarm-set-from-google-calendar/edit/main/README-ja.md">日本語はこちら</a><p>
+<a href="https://github.com/sh1ura/M5stack-wakeup-alarm-set-from-google-calendar/blob/main/README-ja.md">日本語はこちら</a><p>
  
 [![](https://img.youtube.com/vi/843B_bA_Ixc/0.jpg)](https://www.youtube.com/watch?v=843B_bA_Ixc)
 
