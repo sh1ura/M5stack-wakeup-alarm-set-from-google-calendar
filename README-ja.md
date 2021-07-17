@@ -1,6 +1,6 @@
 # M5stack 目覚し時計，Google Calendar から自動的に予定を取得して時刻セット
 
-<a href="https://github.com/sh1ura/M5stack-wakeup-alarm-set-from-google-calendar/edit/main/README.md">English version here</a><p>
+<a href="https://github.com/sh1ura/M5stack-wakeup-alarm-set-from-google-calendar/blob/main/README.md">English version here</a><p>
 
 [![](https://img.youtube.com/vi/843B_bA_Ixc/0.jpg)](https://www.youtube.com/watch?v=843B_bA_Ixc)
 
