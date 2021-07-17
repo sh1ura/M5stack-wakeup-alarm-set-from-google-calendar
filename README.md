@@ -7,9 +7,11 @@
 M5stack app of wakeup alarm, time is automatically set from events in google calendar
 
 - Time of wakeup alarm is automatically set from the events in the day.
+  * It calculates the earliest time and set alarm once a day 
 - Time from the alarm to the event can be set independently to each calendar.
   * for 'alarm' calendar, set 0 min
   * for 'event' calendar, set necessary time for breakfast, move, etc.
+- ntp (Network Time Protocol) realizes accurate clock
 - You do not need to use Amazon AWS or google cloud platform. It directly access iCal of google calendar.
 
 <img src="https://user-images.githubusercontent.com/86639425/125974374-a5d1c232-e7c1-42a3-8b3e-16797ea01346.jpg" width="600">
